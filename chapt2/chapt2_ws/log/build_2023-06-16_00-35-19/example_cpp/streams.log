@@ -1,0 +1,104 @@
+[0.007s] Invoking command in '/home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp -- -j20 -l20
+[0.019s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.084s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.097s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.099s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.101s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.107s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.115s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.143s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.143s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.194s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.270s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.301s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.301s] -- Configured cppcheck include dirs: 
+[0.301s] -- Configured cppcheck exclude dirs and/or files: 
+[0.301s] -- Added test 'lint_cmake' to check CMake code style
+[0.301s] -- Added test 'uncrustify' to check C / C++ code style
+[0.301s] -- Configured uncrustify additional arguments: 
+[0.301s] -- Added test 'xmllint' to check XML markup files
+[0.302s] -- Configuring done
+[0.306s] -- Generating done
+[0.306s] -- Build files have been written to: /home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp
+[0.321s] [ 50%] [32mBuilding CXX object CMakeFiles/node_03.dir/src/node_03.cpp.o[0m
+[1.260s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:7:9:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KNode03[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.260s]     7 |         [01;31m[KNode03[m[K(std::string node_name):Node(name)
+[1.260s]       |         [01;31m[K^~~~~~[m[K
+[1.260s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:12:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[K}[m[K’ token
+[1.260s]    12 | private
+[1.260s]       |        [01;31m[K^[m[K
+[1.260s]       |        [32m[K:[m[K
+[1.260s]    13 | 
+[1.260s]    14 | [32m[K}[m[K;
+[1.260s]       | [32m[K~[m[K       
+[1.261s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:[m[K In member function ‘[01m[Kint Node_03::Node03(std::string)[m[K’:
+[1.261s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:7:39:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[1.261s]     7 |         Node03(std::string node_name):[01;31m[KNode[m[K(name)
+[1.261s]       |                                       [01;31m[K^~~~[m[K
+[1.261s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:7:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kname[m[K’ was not declared in this scope; did you mean ‘[01m[Krosidl_generator_traits::name[m[K’?
+[1.261s]     7 |         Node03(std::string node_name):Node([01;31m[Kname[m[K)
+[1.261s]       |                                            [01;31m[K^~~~[m[K
+[1.261s]       |                                            [32m[Krosidl_generator_traits::name[m[K
+[1.261s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.262s]                  from [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:1[m[K:
+[1.262s] [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:155:21:[m[K [01;36m[Knote: [m[K‘[01m[Krosidl_generator_traits::name[m[K’ declared here
+[1.262s]   155 | inline const char * [01;36m[Kname[m[K();
+[1.262s]       |                     [01;36m[K^~~~[m[K
+[1.262s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:11:9:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.262s]    11 |         [01;35m[K}[m[K
+[1.262s]       |         [01;35m[K^[m[K
+[1.262s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:[m[K At global scope:
+[1.262s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:17:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kchar[m[K’
+[1.262s]    17 | int main(int argc [01;31m[Kchar[m[K **argv)
+[1.262s]       |                   [01;31m[K^~~~[m[K
+[1.262s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:17:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint main(int)[m[K’ takes only zero or two arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+[1.262s]    17 | int [01;35m[Kmain[m[K(int argc char **argv)
+[1.262s]       |     [01;35m[K^~~~[m[K
+[1.263s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:[m[K In function ‘[01m[Kint main(int)[m[K’:
+[1.263s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:20:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kargv[m[K’ was not declared in this scope; did you mean ‘[01m[Kargc[m[K’?
+[1.263s]    20 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+[1.263s]       |                        [01;31m[K^~~~[m[K
+[1.263s]       |                        [32m[Kargc[m[K
+[1.431s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[1.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[1.431s]                  from [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:1[m[K:
+[1.431s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Node_03; _Args = {const char (&)[8]}; _Tp = Node_03][m[K’:
+[1.432s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Node_03; _Args = {const char (&)[8]}; _Tp = Node_03; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Node_03>][m[K’
+[1.432s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[8]}; _Tp = Node_03; _Alloc = std::allocator<Node_03>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.432s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Node_03; _Alloc = std::allocator<Node_03>; _Args = {const char (&)[8]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.432s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Node_03>; _Args = {const char (&)[8]}; _Tp = Node_03; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.432s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Node_03>; _Args = {const char (&)[8]}; _Tp = Node_03][m[K’
+[1.432s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Node_03; _Alloc = std::allocator<Node_03>; _Args = {const char (&)[8]}][m[K’
+[1.432s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Node_03; _Args = {const char (&)[8]}][m[K’
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:22:42:[m[K   required from here
+[1.432s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KNode_03::Node_03(const char [8])[m[K’
+[1.432s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[1.432s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:4:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KNode_03::Node_03()[m[K’ (deleted)
+[1.432s]     4 | class [01;36m[KNode_03[m[K : public rclcpp::Node
+[1.432s]       |       [01;36m[K^~~~~~~[m[K
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:4:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:4:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KNode_03::Node_03(const Node_03&)[m[K’ (deleted)
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:4:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kconst Node_03&[m[K’
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:4:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KNode_03::Node_03(Node_03&&)[m[K’ (deleted)
+[1.432s] [01m[K/home/lhope/d2lros2/chapt2/chapt2_ws/src/example_cpp/src/node_03.cpp:4:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [8][m[K’ to ‘[01m[KNode_03&&[m[K’
+[1.458s] gmake[2]: *** [CMakeFiles/node_03.dir/build.make:76：CMakeFiles/node_03.dir/src/node_03.cpp.o] 错误 1
+[1.458s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/node_03.dir/all] 错误 2
+[1.458s] gmake: *** [Makefile:146：all] 错误 2
+[1.459s] Invoked command in '/home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp -- -j20 -l20
