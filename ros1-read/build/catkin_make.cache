@@ -1,0 +1,2 @@
+imu_read
+-DCATKIN_DEVEL_PREFIX=/home/lhope/Documents/ros-myb/ros1-read/devel -DCMAKE_INSTALL_PREFIX=/home/lhope/Documents/ros-myb/ros1-read/install -G Unix Makefiles
