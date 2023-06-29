@@ -9,8 +9,6 @@
 /home/lhope/Documents/ros-myb/ros1-read/src/depth_camera/src/depth_camera.cpp
 iostream
 -
-cstring
--
 opencv2/opencv.hpp
 -
 ros/ros.h

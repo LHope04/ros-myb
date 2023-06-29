@@ -4,10 +4,10 @@
 
 void callback(const sensor_msgs::Imu::ConstPtr& ptr)
 {
-    std::cout << "std_msgs/Header 头信息" << std::endl;
+    std::cout << "std_msgs/Header 头部信息" << std::endl;
     std::cout << "    uint32 序列号: " << ptr->header.seq << std::endl;
     std::cout << "    时间戳: " << ptr->header.stamp << std::endl;
-    std::cout << "    string 坐标系: " << ptr->header.frame_id << std::endl;
+    std::cout << "    string 坐标系ID: " << ptr->header.frame_id << std::endl;
     std::cout << "geometry_msgs/Quaternion 方向信息" << std::endl;
     std::cout << "    float64 x: " << ptr->orientation.x << std::endl;
     std::cout << "    float64 y: " << ptr->orientation.y << std::endl;
@@ -44,6 +44,7 @@ void callback(const sensor_msgs::Imu::ConstPtr& ptr)
 
 int main(int argc, char** argv)
 {
+    setlocale(LC_ALL, "");
     ros::init(argc, argv, "show_imu");
     ros::NodeHandle nodeHandle;
     ros::Subscriber subscriber = nodeHandle.subscribe("/imu/data_raw", 1000, callback);

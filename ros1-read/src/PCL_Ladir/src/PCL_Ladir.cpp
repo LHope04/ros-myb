@@ -8,7 +8,8 @@
 #include "pcl/PCLPointCloud2.h"
 #include "pcl/conversions.h"
 #include "pcl_ros/transforms.h"
-pcl::visualization::CloudViewer viewer("Cloud Viewer");
+
+pcl::visualization::CloudViewer viewer("点云查看器");
 
 void callback(const sensor_msgs::PointCloud2::ConstPtr& msg)
 {
@@ -21,6 +22,7 @@ void callback(const sensor_msgs::PointCloud2::ConstPtr& msg)
 
 int main(int argc, char** argv)
 {
+    setlocale(LC_ALL, "");
     ros::init(argc, argv, "show_point_cloud");
     ros::NodeHandle nodeHandle;
     ros::Subscriber subscriber = nodeHandle.subscribe("/rslidar_points", 1000, callback);
