@@ -1,0 +1,8 @@
+prefix=/home/lhope/Documents/ros-myb/ros1-read/devel
+
+Name: PCL_Ladir
+Description: Description of PCL_Ladir
+Version: 0.0.0
+Cflags: -I/home/lhope/Documents/ros-myb/ros1-read/src/PCL_Ladir/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs

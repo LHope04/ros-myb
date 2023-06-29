@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("PCL_Ladir")
 subdirs("depth_camera")
 subdirs("color_camera")
 subdirs("imu_read")
