@@ -584,6 +584,19 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named imu_read_node
+
+# Build rule for target.
+imu_read_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 imu_read_node
+.PHONY : imu_read_node
+
+# fast build rule for target.
+imu_read_node/fast:
+	$(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/build
+.PHONY : imu_read_node/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -654,6 +667,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... imu_read_node"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 .PHONY : help

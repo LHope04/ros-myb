@@ -80,6 +80,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -91,16 +101,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target test
 test:
@@ -513,6 +513,21 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+imu_read/CMakeFiles/imu_read_node.dir/rule:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f CMakeFiles/Makefile2 imu_read/CMakeFiles/imu_read_node.dir/rule
+.PHONY : imu_read/CMakeFiles/imu_read_node.dir/rule
+
+# Convenience name for target.
+imu_read_node: imu_read/CMakeFiles/imu_read_node.dir/rule
+
+.PHONY : imu_read_node
+
+# fast build rule for target.
+imu_read_node/fast:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/build
+.PHONY : imu_read_node/fast
+
+# Convenience name for target.
 imu_read/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f CMakeFiles/Makefile2 imu_read/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : imu_read/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -542,6 +557,33 @@ roscpp_generate_messages_eus/fast:
 	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f imu_read/CMakeFiles/roscpp_generate_messages_eus.dir/build.make imu_read/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
+src/imu_read.o: src/imu_read.cpp.o
+
+.PHONY : src/imu_read.o
+
+# target to build an object file
+src/imu_read.cpp.o:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/src/imu_read.cpp.o
+.PHONY : src/imu_read.cpp.o
+
+src/imu_read.i: src/imu_read.cpp.i
+
+.PHONY : src/imu_read.i
+
+# target to preprocess a source file
+src/imu_read.cpp.i:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/src/imu_read.cpp.i
+.PHONY : src/imu_read.cpp.i
+
+src/imu_read.s: src/imu_read.cpp.s
+
+.PHONY : src/imu_read.s
+
+# target to generate assembly for a file
+src/imu_read.cpp.s:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/src/imu_read.cpp.s
+.PHONY : src/imu_read.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -550,6 +592,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -563,7 +606,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... list_install_components"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
@@ -575,11 +617,15 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... imu_read_node"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rebuild_cache"
+	@echo "... src/imu_read.o"
+	@echo "... src/imu_read.i"
+	@echo "... src/imu_read.s"
 .PHONY : help
 
 
