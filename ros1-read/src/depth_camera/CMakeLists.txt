@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   tf2_msgs
+   image_transport
 )
 
 ## System dependencies are found with CMake's conventions
@@ -153,7 +154,8 @@ include_directories(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-
+ add_executable(depth_camera_node src/depth_camera.cpp)
+target_link_libraries(depth_camera_node ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

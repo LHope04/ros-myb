@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+depth_camera/CMakeFiles/depth_camera_node.dir/rule:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f CMakeFiles/Makefile2 depth_camera/CMakeFiles/depth_camera_node.dir/rule
+.PHONY : depth_camera/CMakeFiles/depth_camera_node.dir/rule
+
+# Convenience name for target.
+depth_camera_node: depth_camera/CMakeFiles/depth_camera_node.dir/rule
+
+.PHONY : depth_camera_node
+
+# fast build rule for target.
+depth_camera_node/fast:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/build
+.PHONY : depth_camera_node/fast
+
+# Convenience name for target.
 depth_camera/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f CMakeFiles/Makefile2 depth_camera/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : depth_camera/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
@@ -767,6 +782,33 @@ roscpp_generate_messages_eus/fast:
 	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f depth_camera/CMakeFiles/roscpp_generate_messages_eus.dir/build.make depth_camera/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
+src/depth_camera.o: src/depth_camera.cpp.o
+
+.PHONY : src/depth_camera.o
+
+# target to build an object file
+src/depth_camera.cpp.o:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/src/depth_camera.cpp.o
+.PHONY : src/depth_camera.cpp.o
+
+src/depth_camera.i: src/depth_camera.cpp.i
+
+.PHONY : src/depth_camera.i
+
+# target to preprocess a source file
+src/depth_camera.cpp.i:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/src/depth_camera.cpp.i
+.PHONY : src/depth_camera.cpp.i
+
+src/depth_camera.s: src/depth_camera.cpp.s
+
+.PHONY : src/depth_camera.s
+
+# target to generate assembly for a file
+src/depth_camera.cpp.s:
+	cd /home/lhope/Documents/ros-myb/ros1-read/build && $(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/src/depth_camera.cpp.s
+.PHONY : src/depth_camera.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -777,6 +819,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... depth_camera_node"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -820,6 +863,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... src/depth_camera.o"
+	@echo "... src/depth_camera.i"
+	@echo "... src/depth_camera.s"
 .PHONY : help
 
 

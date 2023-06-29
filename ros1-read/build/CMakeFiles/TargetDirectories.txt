@@ -39,6 +39,7 @@
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/install.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/list_install_components.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/edit_cache.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/depth_camera_node.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir

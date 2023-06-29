@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named depth_camera_node
+
+# Build rule for target.
+depth_camera_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 depth_camera_node
+.PHONY : depth_camera_node
+
+# fast build rule for target.
+depth_camera_node/fast:
+	$(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/build
+.PHONY : depth_camera_node/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -839,6 +852,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... depth_camera_node"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
