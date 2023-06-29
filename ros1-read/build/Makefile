@@ -818,6 +818,19 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named color_camera_node
+
+# Build rule for target.
+color_camera_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 color_camera_node
+.PHONY : color_camera_node
+
+# fast build rule for target.
+color_camera_node/fast:
+	$(MAKE) -f color_camera/CMakeFiles/color_camera_node.dir/build.make color_camera/CMakeFiles/color_camera_node.dir/build
+.PHONY : color_camera_node/fast
+
+#=============================================================================
 # Target rules for targets named imu_read_node
 
 # Build rule for target.
@@ -893,6 +906,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... color_camera_node"
 	@echo "... imu_read_node"
 .PHONY : help
 

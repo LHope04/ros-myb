@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/lhope/Documents/ros-myb/ros1-read/build
 # The main recursive "all" target.
 all: gtest/all
 all: depth_camera/all
+all: color_camera/all
 all: imu_read/all
 
 .PHONY : all
@@ -62,6 +63,7 @@ all: imu_read/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: depth_camera/preinstall
+preinstall: color_camera/preinstall
 preinstall: imu_read/preinstall
 
 .PHONY : preinstall
@@ -74,9 +76,28 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: depth_camera/clean
+clean: color_camera/clean
 clean: imu_read/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory color_camera
+
+# Recursive "all" directory target.
+color_camera/all: color_camera/CMakeFiles/color_camera_node.dir/all
+
+.PHONY : color_camera/all
+
+# Recursive "preinstall" directory target.
+color_camera/preinstall:
+
+.PHONY : color_camera/preinstall
+
+# Recursive "clean" directory target.
+color_camera/clean: color_camera/CMakeFiles/color_camera_node.dir/clean
+
+.PHONY : color_camera/clean
 
 #=============================================================================
 # Directory level rules for directory depth_camera
@@ -354,7 +375,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -381,7 +402,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,7 +429,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -435,7 +456,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -462,7 +483,7 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 depth_camera/CMakeFiles/depth_camera_node.dir/all:
 	$(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/depend
 	$(MAKE) -f depth_camera/CMakeFiles/depth_camera_node.dir/build.make depth_camera/CMakeFiles/depth_camera_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=1,2 "Built target depth_camera_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=3,4 "Built target depth_camera_node"
 .PHONY : depth_camera/CMakeFiles/depth_camera_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1563,13 +1584,40 @@ depth_camera/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 .PHONY : depth_camera/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
+# Target rules for target color_camera/CMakeFiles/color_camera_node.dir
+
+# All Build rule for target.
+color_camera/CMakeFiles/color_camera_node.dir/all:
+	$(MAKE) -f color_camera/CMakeFiles/color_camera_node.dir/build.make color_camera/CMakeFiles/color_camera_node.dir/depend
+	$(MAKE) -f color_camera/CMakeFiles/color_camera_node.dir/build.make color_camera/CMakeFiles/color_camera_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=1,2 "Built target color_camera_node"
+.PHONY : color_camera/CMakeFiles/color_camera_node.dir/all
+
+# Build rule for subdir invocation for target.
+color_camera/CMakeFiles/color_camera_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 color_camera/CMakeFiles/color_camera_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles 0
+.PHONY : color_camera/CMakeFiles/color_camera_node.dir/rule
+
+# Convenience name for target.
+color_camera_node: color_camera/CMakeFiles/color_camera_node.dir/rule
+
+.PHONY : color_camera_node
+
+# clean rule for target.
+color_camera/CMakeFiles/color_camera_node.dir/clean:
+	$(MAKE) -f color_camera/CMakeFiles/color_camera_node.dir/build.make color_camera/CMakeFiles/color_camera_node.dir/clean
+.PHONY : color_camera/CMakeFiles/color_camera_node.dir/clean
+
+#=============================================================================
 # Target rules for target imu_read/CMakeFiles/imu_read_node.dir
 
 # All Build rule for target.
 imu_read/CMakeFiles/imu_read_node.dir/all:
 	$(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/depend
 	$(MAKE) -f imu_read/CMakeFiles/imu_read_node.dir/build.make imu_read/CMakeFiles/imu_read_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=11,12 "Built target imu_read_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lhope/Documents/ros-myb/ros1-read/build/CMakeFiles --progress-num=13,14 "Built target imu_read_node"
 .PHONY : imu_read/CMakeFiles/imu_read_node.dir/all
 
 # Build rule for subdir invocation for target.

@@ -83,6 +83,14 @@
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/rebuild_cache.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/tf2_msgs_generate_messages_eus.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/CMakeFiles/roscpp_generate_messages_eus.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/install/strip.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/install/local.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/install.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/list_install_components.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/rebuild_cache.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/edit_cache.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/test.dir
+/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/CMakeFiles/color_camera_node.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/imu_read/CMakeFiles/install/strip.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/imu_read/CMakeFiles/install/local.dir
 /home/lhope/Documents/ros-myb/ros1-read/build/imu_read/CMakeFiles/install.dir

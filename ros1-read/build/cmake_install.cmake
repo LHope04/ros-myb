@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/lhope/Documents/ros-myb/ros1-read/build/gtest/cmake_install.cmake")
   include("/home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/cmake_install.cmake")
+  include("/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/cmake_install.cmake")
   include("/home/lhope/Documents/ros-myb/ros1-read/build/imu_read/cmake_install.cmake")
 
 endif()

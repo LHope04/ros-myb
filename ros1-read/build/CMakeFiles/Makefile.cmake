@@ -13,11 +13,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "color_camera/catkin_generated/ordered_paths.cmake"
+  "color_camera/catkin_generated/package.cmake"
   "depth_camera/catkin_generated/ordered_paths.cmake"
   "depth_camera/catkin_generated/package.cmake"
   "imu_read/catkin_generated/ordered_paths.cmake"
   "imu_read/catkin_generated/package.cmake"
   "/home/lhope/Documents/ros-myb/ros1-read/src/CMakeLists.txt"
+  "/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/CMakeLists.txt"
+  "/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/package.xml"
   "/home/lhope/Documents/ros-myb/ros1-read/src/depth_camera/CMakeLists.txt"
   "/home/lhope/Documents/ros-myb/ros1-read/src/depth_camera/package.xml"
   "/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/CMakeLists.txt"
@@ -237,6 +241,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "depth_camera/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "color_camera/CMakeFiles/CMakeDirectoryInformation.cmake"
   "imu_read/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -292,5 +297,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "depth_camera/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake"
   "depth_camera/CMakeFiles/tf2_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "depth_camera/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"
+  "color_camera/CMakeFiles/color_camera_node.dir/DependInfo.cmake"
   "imu_read/CMakeFiles/imu_read_node.dir/DependInfo.cmake"
   )
