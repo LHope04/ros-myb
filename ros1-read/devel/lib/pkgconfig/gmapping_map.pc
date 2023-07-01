@@ -1,0 +1,8 @@
+prefix=/home/lhope/Documents/ros-myb/ros1-read/devel
+
+Name: gmapping_map
+Description: Description of gmapping_map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

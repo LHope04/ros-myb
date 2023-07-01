@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/lhope/Documents/ros-myb/ros1-read/build/odometry/cmake_install.cmake")
   include("/home/lhope/Documents/ros-myb/ros1-read/build/PCL_Ladir/cmake_install.cmake")
   include("/home/lhope/Documents/ros-myb/ros1-read/build/depth_camera/cmake_install.cmake")
+  include("/home/lhope/Documents/ros-myb/ros1-read/build/gmapping_map/cmake_install.cmake")
   include("/home/lhope/Documents/ros-myb/ros1-read/build/color_camera/cmake_install.cmake")
   include("/home/lhope/Documents/ros-myb/ros1-read/build/imu_read/cmake_install.cmake")
 
