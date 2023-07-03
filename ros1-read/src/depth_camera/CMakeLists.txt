@@ -123,6 +123,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  include
 )
 
 ## Declare a C++ library
@@ -154,7 +155,7 @@ include_directories(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
- add_executable(depth_camera_node src/depth_camera.cpp)
+ add_executable(depth_camera_node src/depth_camera.cpp include/depth_camera.h)
 target_link_libraries(depth_camera_node ${catkin_LIBRARIES})
 #############
 ## Install ##

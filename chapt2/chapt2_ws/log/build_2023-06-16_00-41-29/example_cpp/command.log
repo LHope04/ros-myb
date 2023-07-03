@@ -1,2 +1,0 @@
-Invoking command in '/home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp -- -j20 -l20
-Invoked command in '/home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lhope/d2lros2/chapt2/chapt2_ws/build/example_cpp -- -j20 -l20

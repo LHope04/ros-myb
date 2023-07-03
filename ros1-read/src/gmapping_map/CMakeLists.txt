@@ -125,7 +125,7 @@ include_directories(
   
 
 )
-
+include_directories(include)
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/gmapping_map.cpp
@@ -155,7 +155,7 @@ include_directories(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-add_executable(gmapping_map_node src/gmapping_map.cpp)
+add_executable(gmapping_map_node src/gmapping_map.cpp include/gmapping_map.h)
 target_link_libraries(gmapping_map_node
   ${catkin_LIBRARIES} 
 )

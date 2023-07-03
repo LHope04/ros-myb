@@ -20,6 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"
+  "/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/include"
   )
 
 # Targets to which this target links.

@@ -6,19 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/color_camera.cpp
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/include/color_camera.h
 iostream
 -
 opencv2/opencv.hpp
 -
 ros/ros.h
-/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/ros/ros.h
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/include/ros/ros.h
 sensor_msgs/Image.h
-/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/sensor_msgs/Image.h
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/include/sensor_msgs/Image.h
 cv_bridge/cv_bridge.h
-/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/cv_bridge/cv_bridge.h
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/include/cv_bridge/cv_bridge.h
 image_transport/image_transport.h
-/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/image_transport/image_transport.h
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/include/image_transport/image_transport.h
+
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/color_camera.cpp
+color_camera.h
+/home/lhope/Documents/ros-myb/ros1-read/src/color_camera/src/color_camera.h
 
 /opt/ros/noetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

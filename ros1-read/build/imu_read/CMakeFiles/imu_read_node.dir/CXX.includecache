@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/src/imu_read.cpp
+/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/include/imu_read.h
 iostream
 -
 ros/ros.h
-/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/src/ros/ros.h
+/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/include/ros/ros.h
 sensor_msgs/Imu.h
-/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/src/sensor_msgs/Imu.h
+/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/include/sensor_msgs/Imu.h
+
+/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/src/imu_read.cpp
+imu_read.h
+/home/lhope/Documents/ros-myb/ros1-read/src/imu_read/src/imu_read.h
 
 /opt/ros/noetic/include/geometry_msgs/Quaternion.h
 string

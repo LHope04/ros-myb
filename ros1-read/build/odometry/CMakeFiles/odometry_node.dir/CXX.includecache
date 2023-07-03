@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/lhope/Documents/ros-myb/ros1-read/src/odometry/src/odometry.cpp
+/home/lhope/Documents/ros-myb/ros1-read/src/odometry/include/odometry.h
 iostream
 -
 ros/ros.h
-/home/lhope/Documents/ros-myb/ros1-read/src/odometry/src/ros/ros.h
+/home/lhope/Documents/ros-myb/ros1-read/src/odometry/include/ros/ros.h
 nav_msgs/Odometry.h
-/home/lhope/Documents/ros-myb/ros1-read/src/odometry/src/nav_msgs/Odometry.h
+/home/lhope/Documents/ros-myb/ros1-read/src/odometry/include/nav_msgs/Odometry.h
+
+/home/lhope/Documents/ros-myb/ros1-read/src/odometry/src/odometry.cpp
+odometry.h
+/home/lhope/Documents/ros-myb/ros1-read/src/odometry/src/odometry.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

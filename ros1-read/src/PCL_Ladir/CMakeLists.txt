@@ -120,6 +120,7 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
   ${PCL_LIBRARY_DIRS}
+  include
 )
 
 add_definitions(${PCL_DEFINITIONS})
@@ -153,7 +154,7 @@ add_definitions(${PCL_DEFINITIONS})
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
- add_executable(PCL_Ladir_node src/PCL_Ladir.cpp)
+ add_executable(PCL_Ladir_node src/PCL_Ladir.cpp include/PCL_Ladir.h)
 target_link_libraries(PCL_Ladir_node ${catkin_LIBRARIES} ${PCL_LIBRARIES}) 
 #############
 ## Install ##

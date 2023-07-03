@@ -120,6 +120,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  include
 )
 
 ## Declare a C++ library
@@ -152,7 +153,7 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
- add_executable(color_camera_node src/color_camera.cpp)
+ add_executable(color_camera_node src/color_camera.cpp include/color_camera.h)
 target_link_libraries(color_camera_node ${catkin_LIBRARIES})
 
 

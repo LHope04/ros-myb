@@ -1,6 +1,4 @@
-#include <iostream>
-#include "ros/ros.h"
-#include "nav_msgs/Odometry.h"
+#include "odometry.h"
 
 void callback(const nav_msgs::Odometry::ConstPtr& ptr)
 {

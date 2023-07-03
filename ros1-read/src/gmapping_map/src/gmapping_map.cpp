@@ -1,8 +1,4 @@
-#include <iostream>
-#include <thread>
-#include <opencv2/opencv.hpp>
-#include "ros/ros.h"
-#include "nav_msgs/OccupancyGrid.h"
+#include "gmapping_map.h"
 
 cv::Mat map;
 bool mapInitialized = false;
