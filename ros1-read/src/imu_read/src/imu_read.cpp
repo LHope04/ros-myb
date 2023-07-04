@@ -1,43 +1,43 @@
 #include "imu_read.h"
-
+using namespace std;
 void callback(const sensor_msgs::Imu::ConstPtr& ptr)
 {
-    std::cout << "std_msgs/Header 头部信息" << std::endl;
-    std::cout << "    uint32 序列号: " << ptr->header.seq << std::endl;
-    std::cout << "    时间戳: " << ptr->header.stamp << std::endl;
-    std::cout << "    string 坐标系ID: " << ptr->header.frame_id << std::endl;
-    std::cout << "geometry_msgs/Quaternion 方向信息" << std::endl;
-    std::cout << "    float64 x: " << ptr->orientation.x << std::endl;
-    std::cout << "    float64 y: " << ptr->orientation.y << std::endl;
-    std::cout << "    float64 z: " << ptr->orientation.z << std::endl;
-    std::cout << "    float64 w: " << ptr->orientation.w << std::endl;
-    std::cout << "float64[9] 方向协方差" << std::endl;
-    std::cout << "    ";
+    cout << "std_msgs/Header 头部信息" << endl;
+    cout << "    uint32 序列号: " << ptr->header.seq << endl;
+    cout << "    时间戳: " << ptr->header.stamp << endl;
+    cout << "    string 坐标系ID: " << ptr->header.frame_id << endl;
+    cout << "geometry_msgs/Quaternion 方向信息" << endl;
+    cout << "    float64 x: " << ptr->orientation.x << endl;
+    cout << "    float64 y: " << ptr->orientation.y << endl;
+    cout << "    float64 z: " << ptr->orientation.z << endl;
+    cout << "    float64 w: " << ptr->orientation.w << endl;
+    cout << "float64[9] 方向协方差" << endl;
+    cout << "    ";
     for (int i = 0; i < 9; ++i) {
-        std::cout << ptr->orientation_covariance[i] << " ";
+        cout << ptr->orientation_covariance[i] << " ";
     }
-    std::cout << std::endl;
-    std::cout << "geometry_msgs/Vector3 角速度信息" << std::endl;
-    std::cout << "    float64 x: " << ptr->angular_velocity.x << std::endl;
-    std::cout << "    float64 y: " << ptr->angular_velocity.y << std::endl;
-    std::cout << "    float64 z: " << ptr->angular_velocity.z << std::endl;
-    std::cout << "float64[9] 角速度协方差" << std::endl;
-    std::cout << "    ";
+    cout << endl;
+    cout << "geometry_msgs/Vector3 角速度信息" << endl;
+    cout << "    float64 x: " << ptr->angular_velocity.x << endl;
+    cout << "    float64 y: " << ptr->angular_velocity.y << endl;
+    cout << "    float64 z: " << ptr->angular_velocity.z << endl;
+    cout << "float64[9] 角速度协方差" << endl;
+    cout << "    ";
     for (int i = 0; i < 9; ++i) {
-        std::cout << ptr->angular_velocity_covariance[i] << " ";
+        cout << ptr->angular_velocity_covariance[i] << " ";
     }
-    std::cout << std::endl;
-    std::cout << "geometry_msgs/Vector3 线性加速度信息" << std::endl;
-    std::cout << "    float64 x: " << ptr->linear_acceleration.x << std::endl;
-    std::cout << "    float64 y: " << ptr->linear_acceleration.y << std::endl;
-    std::cout << "    float64 z: " << ptr->linear_acceleration.z << std::endl;
-    std::cout << "float64[9] 线性加速度协方差" << std::endl;
-    std::cout << "    ";
+    cout << endl;
+    cout << "geometry_msgs/Vector3 线性加速度信息" << endl;
+    cout << "    float64 x: " << ptr->linear_acceleration.x << endl;
+    cout << "    float64 y: " << ptr->linear_acceleration.y << endl;
+    cout << "    float64 z: " << ptr->linear_acceleration.z << endl;
+    cout << "float64[9] 线性加速度协方差" << endl;
+    cout << "    ";
     for (int i = 0; i < 9; ++i) {
-        std::cout << ptr->linear_acceleration_covariance[i] << " ";
+        cout << ptr->linear_acceleration_covariance[i] << " ";
     }
-    std::cout << std::endl;
-    std::cout << "-------------------------------------------------------------" << std::endl;
+    cout << endl;
+    cout << "-------------------------------------------------------------" << endl;
 }
 
 int main(int argc, char** argv)

@@ -2,32 +2,37 @@
 
 cv::Mat map;
 bool mapInitialized = false;
-
 void drawMap(const nav_msgs::OccupancyGrid::ConstPtr& ptr)
 {
+    // 输出地图的分辨率、宽度和高度
     std::cout << "resolution: " << ptr->info.resolution << std::endl;
     std::cout << "width: " << ptr->info.width << std::endl;
     std::cout << "height: " << ptr->info.height << std::endl;
 
-    double scale = 1.0;
-    int width = 1200;
-    int height = 1200;
-    cv::Point offset = {-1600, -1600};
-    map = cv::Mat::zeros(cv::Size(width, height), CV_8UC3);
+    // 定义绘制参数
+    double scale = 1.0; // 缩放比例
+    int width = 1200; // 绘制区域的宽度
+    int height = 1200; // 绘制区域的高度
+    cv::Point offset = {-1600, -1600}; // 绘制区域的偏移量
+    map = cv::Mat::zeros(cv::Size(width, height), CV_8UC3); // 创建一个空白图像
 
+    // 遍历地图的所有像素
     for (int i = 0; i < ptr->info.width * ptr->info.height; ++i) {
+        // 计算像素的坐标
         int x = (i % ptr->info.width + offset.x) * scale;
         int y = (i / ptr->info.width + offset.y) * scale;
 
+        // 根据地图数据的值，在map上绘制不同的区域
         if (ptr->data[i] == -1) {
-            cv::rectangle(map, cv::Rect(x, y, scale, scale), cv::Scalar(220, 220, 220), -1);
+            cv::rectangle(map, cv::Rect(x, y, scale, scale), cv::Scalar(220, 220, 220), -1); // 灰色矩形
         } else if (ptr->data[i] >= 80) {
-            cv::rectangle(map, cv::Rect(x, y, scale, scale), cv::Scalar(50, 50, 50), -1);
+            cv::rectangle(map, cv::Rect(x, y, scale, scale), cv::Scalar(50, 50, 50), -1); // 黑色矩形
         } else {
-            cv::rectangle(map, cv::Rect(x, y, scale, scale), cv::Scalar(200, 240, 200), -1);
+            cv::rectangle(map, cv::Rect(x, y, scale, scale), cv::Scalar(200, 240, 200), -1); // 绿色矩形
         }
     }
 
+    // 设置mapInitialized的值为true，表示地图已经初始化完成
     mapInitialized = true;
 }
 

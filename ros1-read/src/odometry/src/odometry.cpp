@@ -1,46 +1,46 @@
 #include "odometry.h"
-
+using namespace std;
 void callback(const nav_msgs::Odometry::ConstPtr& ptr)
 {
-    std::cout << "std_msgs/Header 头部" << std::endl;
-    std::cout << "    uint32 序列号: " << ptr->header.seq << std::endl;
-    std::cout << "    时间戳: " << ptr->header.stamp << std::endl;
-    std::cout << "    字符串 坐标系ID: " << ptr->header.frame_id << std::endl;
-    std::cout << "字符串 子坐标系ID: " << ptr->child_frame_id << std::endl;
-    std::cout << "geometry_msgs/PoseWithCovariance 姿态" << std::endl;
-    std::cout << "    geometry_msgs/Pose 姿态" << std::endl;
-    std::cout << "        geometry_msgs/Point 位置" << std::endl;
-    std::cout << "        float64 x: " << ptr->pose.pose.position.x << std::endl;
-    std::cout << "        float64 y: " << ptr->pose.pose.position.y << std::endl;
-    std::cout << "        float64 z: " << ptr->pose.pose.position.z << std::endl;
-    std::cout << "    geometry_msgs/Quaternion 方向" << std::endl;
-    std::cout << "        float64 x: " << ptr->pose.pose.orientation.x << std::endl;
-    std::cout << "        float64 y: " << ptr->pose.pose.orientation.y << std::endl;
-    std::cout << "        float64 z: " << ptr->pose.pose.orientation.z << std::endl;
-    std::cout << "        float64 w: " << ptr->pose.pose.orientation.w << std::endl;
-    std::cout << "    float64[36] 协方差" << std::endl;
-    std::cout << "        ";
+    cout << "std_msgs/Header 头部" << endl;
+    cout << "    uint32 序列号: " << ptr->header.seq << endl;
+    cout << "    时间戳: " << ptr->header.stamp << endl;
+    cout << "    字符串 坐标系ID: " << ptr->header.frame_id << endl;
+    cout << "字符串 子坐标系ID: " << ptr->child_frame_id << endl;
+    cout << "geometry_msgs/PoseWithCovariance 姿态" << endl;
+    cout << "    geometry_msgs/Pose 姿态" << endl;
+    cout << "        geometry_msgs/Point 位置" << endl;
+    cout << "        float64 x: " << ptr->pose.pose.position.x << endl;
+    cout << "        float64 y: " << ptr->pose.pose.position.y << endl;
+    cout << "        float64 z: " << ptr->pose.pose.position.z << endl;
+    cout << "    geometry_msgs/Quaternion 方向" << endl;
+    cout << "        float64 x: " << ptr->pose.pose.orientation.x << endl;
+    cout << "        float64 y: " << ptr->pose.pose.orientation.y << endl;
+    cout << "        float64 z: " << ptr->pose.pose.orientation.z << endl;
+    cout << "        float64 w: " << ptr->pose.pose.orientation.w << endl;
+    cout << "    float64[36] 协方差" << endl;
+    cout << "        ";
     for (int i = 0; i < 36; ++i) {
-        std::cout << ptr->pose.covariance[i] << " ";
+        cout << ptr->pose.covariance[i] << " ";
     }
-    std::cout << std::endl;
-    std::cout << "geometry_msgs/TwistWithCovariance 速度" << std::endl;
-    std::cout << "    geometry_msgs/Twist 速度" << std::endl;
-    std::cout << "        geometry_msgs/Vector3 线速度" << std::endl;
-    std::cout << "            float64 x: " << ptr->twist.twist.linear.x << std::endl;
-    std::cout << "            float64 y: " << ptr->twist.twist.linear.y << std::endl;
-    std::cout << "            float64 z: " << ptr->twist.twist.linear.z << std::endl;
-    std::cout << "        geometry_msgs/Vector3 角速度" << std::endl;
-    std::cout << "            float64 x: " << ptr->twist.twist.angular.x << std::endl;
-    std::cout << "            float64 y: " << ptr->twist.twist.angular.y << std::endl;
-    std::cout << "            float64 z: " << ptr->twist.twist.angular.z << std::endl;
-    std::cout << "    float64[36] 协方差" << std::endl;
-    std::cout << "        ";
+    cout << endl;
+    cout << "geometry_msgs/TwistWithCovariance 速度" << endl;
+    cout << "    geometry_msgs/Twist 速度" << endl;
+    cout << "        geometry_msgs/Vector3 线速度" << endl;
+    cout << "            float64 x: " << ptr->twist.twist.linear.x << endl;
+    cout << "            float64 y: " << ptr->twist.twist.linear.y << endl;
+    cout << "            float64 z: " << ptr->twist.twist.linear.z << endl;
+    cout << "        geometry_msgs/Vector3 角速度" << endl;
+    cout << "            float64 x: " << ptr->twist.twist.angular.x << endl;
+    cout << "            float64 y: " << ptr->twist.twist.angular.y << endl;
+    cout << "            float64 z: " << ptr->twist.twist.angular.z << endl;
+    cout << "    float64[36] 协方差" << endl;
+    cout << "        ";
     for (int i = 0; i < 36; ++i) {
-        std::cout << ptr->twist.covariance[i] << " ";
+        cout << ptr->twist.covariance[i] << " ";
     }
-    std::cout << std::endl;
-    std::cout << "-------------------------------------------------------------" << std::endl;
+    cout << endl;
+    cout << "-------------------------------------------------------------" << endl;
 }
 
 int main(int argc, char** argv)
